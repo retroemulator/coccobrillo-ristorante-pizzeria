@@ -1023,11 +1023,9 @@ footer {
 [data-en] { display: none; }
 body.lang-en [data-it] { display: none; }
 body.lang-en [data-en] { display: block; }
-/* Inline elements */
-span[data-it], span[data-en],
-a[data-it], a[data-en] { display: inline; }
-body.lang-en span[data-it], body.lang-en a[data-it] { display: none; }
-body.lang-en span[data-en], body.lang-en a[data-en] { display: inline; }
+/* Correzione per elementi inline: a normali restano inline, .btn restano inline-block */
+body.lang-en a[data-en]       { display: inline; }
+body.lang-en a.btn[data-en]   { display: inline-block; }
 
 /* ============================================================
    RESPONSIVE — TABLET (max 1024px)
