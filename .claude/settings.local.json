@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir *)",
+      "Bash(curl -s -L -o logo.png \"https://static.wixstatic.com/media/b1026a_4ca2980848924883a000e5444347758d~mv2.png\")",
+      "Bash(curl -s -L -o \"C:\\\\Temp\\\\CLAUDE CODE\\\\Coccobrillo/assets/images/logo2.png\" \"https://static.wixstatic.com/media/b1026a_5f075394f86c4d958c23ae13e7d5cb30~mv2.png\")",
+      "Bash(curl -s -L -o \"C:\\\\Temp\\\\CLAUDE CODE\\\\Coccobrillo/assets/images/interno-1.jpg\" \"https://static.wixstatic.com/media/b1026a_60397f909eab4945a8084e9a5643c290~mv2.jpg\")",
+      "Bash(curl -s -L -o \"C:\\\\Temp\\\\CLAUDE CODE\\\\Coccobrillo/assets/images/interno-2.jpg\" \"https://static.wixstatic.com/media/b1026a_c10c8816e9cf429a81f53c6fd699d6cb~mv2.jpg\")",
+      "Bash(curl -s -L -o \"C:\\\\Temp\\\\CLAUDE CODE\\\\Coccobrillo/assets/images/forno.jpg\" \"https://static.wixstatic.com/media/b1026a_1e746ba7071f4a8ab2dbf3030c297f90~mv2.jpg\")",
+      "Bash(curl -s -L -o 'C:\\\\Temp\\\\CLAUDE CODE\\\\Coccobrillo/assets/images/favicon-source.png' 'https://static.wixstatic.com/media/b1026a_53873644c1b34ebbbf2d0380afaa05ce~mv2.png/v1/fill/w_408,h_216,al_c,q_80,usm_0.66_1.00_0.01/b1026a_53873644c1b34ebbbf2d0380afaa05ce~mv2.png')",
+      "Bash(node -e \"const sharp = require\\('sharp'\\); console.log\\('sharp ok'\\);\")",
+      "Bash(npm install *)",
+      "Bash(rm -f package.json package-lock.json)",
+      "Bash(rm -rf node_modules)"
+    ]
+  }
+}
