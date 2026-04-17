@@ -418,8 +418,8 @@ footer {
 /* ---------- HERO (Homepage) ---------- */
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 600px;
+  height: 110vh;
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -483,7 +483,7 @@ footer {
 }
 .hero-subtitle {
   font-family: var(--font-script);
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
   color: var(--accent-4);
   margin-bottom: 2rem;
   opacity: 0;
@@ -535,9 +535,14 @@ footer {
 
 /* ---------- SPECIALITÀ CARDS ---------- */
 .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
+  justify-content: center;
+}
+.cards-grid > * {
+  flex: 0 1 calc(33.333% - 1rem);
+  min-width: 260px;
 }
 .card {
   background: var(--white);
