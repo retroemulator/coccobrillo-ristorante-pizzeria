@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
+    document.querySelectorAll('option[data-it]').forEach(o => { o.hidden = lang === 'en'; });
+    document.querySelectorAll('option[data-en]').forEach(o => { o.hidden = lang === 'it'; });
     if (save) localStorage.setItem('coccobrillo_lang', lang);
   }
 
