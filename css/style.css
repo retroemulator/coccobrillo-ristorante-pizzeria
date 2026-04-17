@@ -849,7 +849,7 @@ body.lang-en .form-group label[data-en] { display: block; }
   box-shadow: var(--shadow);
   transform: translateY(-3px);
 }
-.taglio-img { height: 280px; overflow: hidden; flex-shrink: 0; }
+.taglio-img { aspect-ratio: 4/5; overflow: hidden; flex-shrink: 0; }
 .taglio-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .taglio-card:hover .taglio-img img { transform: scale(1.05); }
 .taglio-content { padding: 1.5rem; flex: 1; }
@@ -1100,8 +1100,6 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   /* Process */
   .process-grid { grid-template-columns: repeat(2, 1fr); }
 
-  /* Tagli */
-  .taglio-img { height: 200px; }
 
   /* Team */
   .team-grid { grid-template-columns: 1fr; }
