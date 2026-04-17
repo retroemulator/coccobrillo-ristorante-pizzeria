@@ -871,6 +871,7 @@ footer {
   margin-bottom: 0.3rem;
 }
 .team-role { font-size: 0.85rem; color: var(--accent-3); }
+.team-member { border-left: 3px solid var(--accent-1); padding-left: 1.2rem; }
 
 /* ---------- DOVE SIAMO PAGE ---------- */
 .info-cards-grid {
