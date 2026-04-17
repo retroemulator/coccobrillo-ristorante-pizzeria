@@ -684,6 +684,9 @@ footer {
 .form-group select option { background: var(--dark); }
 .form-group textarea { resize: vertical; min-height: 100px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group label[data-en] { display: none; }
+body.lang-en .form-group label[data-it] { display: none; }
+body.lang-en .form-group label[data-en] { display: block; }
 .form-msg {
   padding: 0.75rem 1rem;
   border-radius: var(--radius);
