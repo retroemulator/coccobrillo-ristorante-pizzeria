@@ -755,7 +755,7 @@ body.lang-en .form-group label[data-en] { display: block; }
 .menu-intro-text em {
   color: var(--accent-1);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 .menu-chapter { margin-bottom: 4rem; }
 .menu-chapter-header {
