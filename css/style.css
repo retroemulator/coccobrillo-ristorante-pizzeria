@@ -978,9 +978,9 @@ body.lang-en .form-group label[data-en] { display: block; }
   bottom: 2rem;
   right: 2rem;
   z-index: 9990;
-  width: 320px;
-  border-radius: 8px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   transform: translateY(120%);
   transition: transform 0.4s ease;
   overflow: hidden;
