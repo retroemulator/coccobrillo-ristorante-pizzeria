@@ -738,6 +738,24 @@ body.lang-en .form-group label[data-en] { display: block; }
 
 /* ---------- MENU PAGE ---------- */
 .menu-page { max-width: 680px; margin: 0 auto; }
+.menu-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2.5rem 2rem;
+  border-top: 1px solid rgba(133,33,35,0.2);
+  border-bottom: 1px solid rgba(133,33,35,0.2);
+}
+.menu-intro-text {
+  font-family: var(--font-script);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--dark);
+  line-height: 2;
+  margin: 0;
+}
+.menu-intro-text em {
+  color: var(--accent-1);
+  font-style: normal;
+}
 .menu-chapter { margin-bottom: 4rem; }
 .menu-chapter-header {
   display: flex;
