@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         popup.classList.remove('hidden');
         requestAnimationFrame(() => popup.classList.add('visible'));
-      }, 3000);
+      }, 2000);
     }
 
     const closeBtn = popup.querySelector('.popup-close');
