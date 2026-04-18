@@ -753,9 +753,13 @@ body.lang-en .form-group label[data-en] { display: block; }
   margin: 0;
 }
 .menu-intro-text em {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
   color: var(--accent-1);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
 }
 .menu-chapter { margin-bottom: 4rem; }
 .menu-chapter-header {
