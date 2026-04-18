@@ -736,6 +736,47 @@ body.lang-en .form-group label[data-en] { display: block; }
 }
 .map-placeholder a { color: var(--accent-1); }
 
+/* ---------- CHI SIAMO — STATS & VALUES ---------- */
+.cs-stats {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.cs-stat { text-align: center; flex: 0 1 280px; }
+.cs-stat-num {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: 0.06em;
+  color: var(--accent-1);
+  margin-bottom: 0.6rem;
+}
+.cs-stat-label {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--accent-3);
+  line-height: 1.6;
+}
+.cs-values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(133,33,35,0.15);
+}
+.cs-value {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+.cs-sep { color: var(--accent-1); font-size: 1rem; line-height: 1; }
+
 /* ---------- MENU PAGE ---------- */
 .menu-page { max-width: 680px; margin: 0 auto; }
 .menu-intro {
