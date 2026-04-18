@@ -3,7 +3,7 @@
    ============================================================ */
 
 /* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
 
 /* ---------- CSS Variables ---------- */
 :root {
@@ -754,9 +754,7 @@ body.lang-en .form-group label[data-en] { display: block; }
 }
 .menu-intro-text em {
   display: block;
-  font-family: var(--font-heading);
-  font-size: 0.85em;
-  letter-spacing: 0.05em;
+  font-family: var(--font-script);
   color: var(--accent-1);
   font-style: normal;
   font-weight: 700;
