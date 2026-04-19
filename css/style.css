@@ -1118,6 +1118,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
    ============================================================ */
 @media (max-width: 768px) {
   .section { padding: 3.5rem 0; }
+  .container { padding: 0 1.25rem; }
 
   /* Navbar */
   .nav-links { display: none; }
@@ -1128,11 +1129,17 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .split .split-img { order: -1; max-height: 300px; }
+  .split .split-img { order: -1; max-height: 340px; }
+  .split .split-img[style*="aspect-ratio"] { max-height: none; max-width: 360px; margin: 0 auto; width: 100%; }
 
   /* Hero */
+  .hero { height: auto; min-height: 560px; padding: 6rem 0 4rem; }
+  .hero-logo { height: 64px; }
   .hero-btns { flex-direction: column; align-items: center; }
   .hero-btns .btn { width: 100%; max-width: 280px; text-align: center; }
+
+  /* Page header */
+  .page-header { height: 45vh; min-height: 260px; }
 
   /* Cards */
   .cards-grid { grid-template-columns: 1fr; }
@@ -1172,6 +1179,22 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   /* Form row */
   .form-row { grid-template-columns: 1fr; }
 
+  /* Chi siamo stats & values */
+  .cs-stats { gap: 2rem; margin-bottom: 2.5rem; }
+  .cs-stat { flex: 1 1 100%; }
+  .cs-values { gap: 0.8rem; padding-top: 2rem; }
+  .cs-value { font-size: 0.65rem; letter-spacing: 0.18em; }
+
+  /* Menu page */
+  .menu-intro { padding: 1.75rem 1rem; margin-bottom: 2.5rem; }
+  .menu-intro-text { font-size: 1.2rem; line-height: 1.5; }
+  .menu-chapter { margin-bottom: 3rem; }
+  .menu-chapter-header { gap: 0.8rem; margin-bottom: 1.5rem; }
+  .menu-chapter-title { font-size: 0.68rem; letter-spacing: 0.22em; }
+
+  /* Tagli cards */
+  .taglio-img { aspect-ratio: 4/5; max-height: 420px; }
+
   /* Gift card popup */
   .giftcard-popup {
     width: 90%;
@@ -1179,6 +1202,10 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
     right: 5%;
     bottom: 1rem;
   }
+
+  /* Cookie banner */
+  .cookie-banner { flex-direction: column; gap: 0.8rem; padding: 1rem; }
+  .cookie-btns { width: 100%; justify-content: center; }
 }
 
 @media (max-width: 480px) {
@@ -1186,6 +1213,9 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-item:first-child { grid-column: span 1; }
   .process-grid { grid-template-columns: 1fr; }
+  .menu-intro-text { font-size: 1.1rem; }
+  .split .split-img[style*="aspect-ratio"] { max-width: 300px; }
+  .page-header-content h1 { font-size: 1.8rem; }
 }
 
 /* ============================================================
