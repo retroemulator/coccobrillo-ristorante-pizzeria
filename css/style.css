@@ -1175,6 +1175,9 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   /* Form row */
   .form-row { grid-template-columns: 1fr; }
 
+  /* Orari — testo 10% più piccolo per evitare wrap */
+  .orari-row { font-size: 0.855rem; }
+
   /* Chi siamo stats & values */
   .cs-stats { gap: 2rem; margin-bottom: 2.5rem; }
   .cs-stat { flex: 1 1 100%; }
