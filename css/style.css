@@ -495,7 +495,7 @@ footer {
 }
 .hero-subtitle {
   font-family: var(--font-script);
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(1.38rem, 3.45vw, 2.07rem);
   color: var(--accent-4);
   margin-bottom: 2rem;
   opacity: 0;
