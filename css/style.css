@@ -994,8 +994,8 @@ body.lang-en .form-group label[data-en] { display: block; }
   box-shadow: var(--shadow);
   transform: translateY(-3px);
 }
-.taglio-img { aspect-ratio: 4/5; overflow: hidden; flex-shrink: 0; }
-.taglio-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.taglio-img { overflow: hidden; flex-shrink: 0; }
+.taglio-img img { width: 100%; height: auto; display: block; transition: transform 0.5s ease; }
 .taglio-card:hover .taglio-img img { transform: scale(1.05); }
 .taglio-content { padding: 1.5rem; flex: 1; }
 .taglio-content h3 {
@@ -1281,7 +1281,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .team-members-col { gap: 1.25rem !important; }
 
   /* Tagli cards */
-  .taglio-img { aspect-ratio: 4/5; max-height: 420px; }
+  .taglio-img { max-height: none; }
 
   /* Gift card popup */
   .giftcard-popup {
