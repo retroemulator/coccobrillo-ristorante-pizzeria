@@ -389,10 +389,40 @@
                 <select id="orario-idx" name="orario">
                   <option value="" data-it>Seleziona</option>
                   <option value="" data-en>Select</option>
-                  <option value="pranzo" data-it>Pranzo (12:00–14:30)</option>
-                  <option value="pranzo" data-en>Lunch (12:00–14:30)</option>
-                  <option value="cena" data-it>Cena (19:00–23:00)</option>
-                  <option value="cena" data-en>Dinner (19:00–23:00)</option>
+                  <optgroup label="Pranzo" data-it>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                  </optgroup>
+                  <optgroup label="Lunch" data-en>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                  </optgroup>
+                  <optgroup label="Cena" data-it>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                    <option value="22:30">22:30</option>
+                  </optgroup>
+                  <optgroup label="Dinner" data-en>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                    <option value="22:30">22:30</option>
+                  </optgroup>
                 </select>
               </div>
             </div>
@@ -459,6 +489,21 @@
   </div>
 
 </main>
+
+<!-- CONFIRM MODAL -->
+<div id="confirm-modal" class="confirm-overlay" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+  <div class="confirm-card">
+    <div class="confirm-card-icon">✓</div>
+    <h3 id="confirm-title" data-it>Messaggio inviato</h3>
+    <h3 data-en>Message sent</h3>
+    <p data-it>Grazie per il tuo messaggio!<br>Ti risponderemo al più presto.</p>
+    <p data-en>Thank you for your message!<br>We'll get back to you shortly.</p>
+    <p class="confirm-note" data-it>Se hai richiesto la prenotazione di un tavolo, il nostro personale ti ricontatterà per conferma. La sola compilazione del form non garantisce la disponibilità del tavolo nell'orario scelto.</p>
+    <p class="confirm-note" data-en>If you requested a table reservation, our staff will contact you to confirm availability. Submitting this form does not guarantee table availability at the selected time.</p>
+    <button class="confirm-close-btn" data-it>Chiudi</button>
+    <button class="confirm-close-btn" data-en>Close</button>
+  </div>
+</div>
 
 <!-- ===== FOOTER ===== -->
 <footer>

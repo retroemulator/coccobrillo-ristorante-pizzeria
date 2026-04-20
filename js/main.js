@@ -64,11 +64,33 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
   }
 
-  /* ---------- 5. FORM SUBMIT (Formspree async) ---------- */
+  /* ---------- 5. CONFIRM MODAL ---------- */
+  const confirmModal = document.getElementById('confirm-modal');
+  if (confirmModal) {
+    const closeBtns = confirmModal.querySelectorAll('.confirm-close-btn');
+    const openModal = () => {
+      confirmModal.classList.add('visible');
+      document.body.style.overflow = 'hidden';
+    };
+    const closeModal = () => {
+      confirmModal.classList.remove('visible');
+      document.body.style.overflow = '';
+    };
+    closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+    confirmModal.addEventListener('click', (e) => {
+      if (e.target === confirmModal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && confirmModal.classList.contains('visible')) closeModal();
+    });
+    window._openConfirmModal = openModal;
+  }
+
+  /* ---------- 5b. FORM SUBMIT (Formspree async) ---------- */
   document.querySelectorAll('.contact-form').forEach(form => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const btn    = form.querySelector('[type="submit"]');
+      const btn    = form.querySelector('[type="submit"]:not([hidden]):not([style*="display: none"])') || form.querySelector('[type="submit"]');
       const msgEl  = form.querySelector('.form-msg');
       if (!btn || !msgEl) return;
 
@@ -82,10 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
           headers: { 'Accept': 'application/json' }
         });
         if (response.ok) {
-          msgEl.textContent = btn.dataset.success || 'Grazie! Ti risponderemo al più presto.';
-          msgEl.className = 'form-msg success';
-          msgEl.style.display = 'block';
           form.reset();
+          if (window._openConfirmModal) {
+            window._openConfirmModal();
+          } else {
+            msgEl.textContent = btn.dataset.success || 'Grazie! Ti risponderemo al più presto.';
+            msgEl.className = 'form-msg success';
+            msgEl.style.display = 'block';
+            setTimeout(() => { msgEl.style.display = 'none'; }, 7000);
+          }
         } else {
           throw new Error('Server error');
         }
@@ -93,10 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
         msgEl.textContent = btn.dataset.error || 'Si è verificato un errore. Riprova o chiamaci al 011 901 6721.';
         msgEl.className = 'form-msg error';
         msgEl.style.display = 'block';
+        setTimeout(() => { msgEl.style.display = 'none'; }, 7000);
       } finally {
         btn.disabled = false;
         btn.textContent = btn.dataset.label || 'Invia Prenotazione';
-        setTimeout(() => { msgEl.style.display = 'none'; }, 7000);
       }
     });
   });
@@ -132,6 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     document.querySelectorAll('option[data-it]').forEach(o => { o.hidden = lang === 'en'; });
     document.querySelectorAll('option[data-en]').forEach(o => { o.hidden = lang === 'it'; });
+    document.querySelectorAll('optgroup[data-it]').forEach(o => { o.hidden = lang === 'en'; });
+    document.querySelectorAll('optgroup[data-en]').forEach(o => { o.hidden = lang === 'it'; });
     if (save) localStorage.setItem('coccobrillo_lang', lang);
   }
 
