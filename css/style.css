@@ -1300,7 +1300,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-item:first-child { grid-column: span 1; }
   .process-grid { grid-template-columns: 1fr; }
-  .menu-intro-text { font-size: 1.59rem; }
+  .menu-intro-text { font-size: 1.43rem; }
   .split .split-img[style*="aspect-ratio"] { max-width: 300px; }
   .page-header-content h1 { font-size: 1.8rem; }
 }
