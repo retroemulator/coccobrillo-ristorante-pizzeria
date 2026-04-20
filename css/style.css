@@ -150,6 +150,28 @@ p:last-child { margin-bottom: 0; }
 }
 .split-img:hover img { transform: scale(1.04); }
 
+/* Hover image swap */
+.hover-swap { position: relative; }
+.hover-swap .img-h1,
+.hover-swap .img-h2 {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: none;
+}
+.hover-swap:hover .img-h1 { animation: hswap-1 3s ease-in-out infinite; }
+.hover-swap:hover .img-h2 { animation: hswap-2 3s ease-in-out infinite; }
+@keyframes hswap-1 {
+  0%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+@keyframes hswap-2 {
+  0%, 45% { opacity: 0; }
+  55%, 100% { opacity: 1; }
+}
+
 /* ---------- NAVBAR ---------- */
 .navbar {
   position: fixed;
