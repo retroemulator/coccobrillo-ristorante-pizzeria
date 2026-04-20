@@ -17,7 +17,8 @@
       "Bash(curl -s -L -o \"C:\\\\Temp\\\\CLAUDE CODE\\\\Coccobrillo\\\\assets\\\\images\\\\team-1.jpg\" \"https://static.wixstatic.com/media/b1026a_66b0c0eb242148c3984cd82c1b940e53~mv2.jpg\")",
       "Bash(curl -s -L -o \"C:\\\\Temp\\\\CLAUDE CODE\\\\Coccobrillo\\\\assets\\\\images\\\\team-1.jpg\" \"https://static.wixstatic.com/media/b1026a_b012fe5a18274ca692b6460a887577ba~mv2.png\")",
       "Bash(python3 -)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "PowerShell(Get-Command ffmpeg -ErrorAction SilentlyContinue)"
     ]
   }
 }
