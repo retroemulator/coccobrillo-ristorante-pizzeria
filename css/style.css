@@ -1274,6 +1274,12 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .menu-chapter-header { gap: 0.8rem; margin-bottom: 1.5rem; }
   .menu-chapter-title { font-size: 0.68rem; letter-spacing: 0.22em; }
 
+  /* Team chi siamo */
+  .team-img-wrap { overflow: visible; }
+  .team-img-wrap img { width: 100% !important; }
+  .team-members-col { flex-direction: row !important; flex-wrap: wrap; gap: 1rem !important; justify-content: center; }
+  .team-members-col .team-member { flex: 1 1 130px; text-align: center; border-left: none !important; padding-left: 0 !important; border-top: 2px solid var(--accent-1); padding-top: 0.75rem; }
+
   /* Tagli cards */
   .taglio-img { aspect-ratio: 4/5; max-height: 420px; }
 
