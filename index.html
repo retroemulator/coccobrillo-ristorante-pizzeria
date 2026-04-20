@@ -373,15 +373,15 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="email-idx" data-it>Email</label>
-              <label for="email-idx" data-en>Email</label>
-              <input type="email" id="email-idx" name="email" autocomplete="email" placeholder="mario@example.com">
+              <label for="email-idx" data-it>Email *</label>
+              <label for="email-idx" data-en>Email *</label>
+              <input type="email" id="email-idx" name="email" required autocomplete="email" placeholder="mario@example.com">
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="data-idx" data-it>Data *</label>
-                <label for="data-idx" data-en>Date *</label>
-                <input type="date" id="data-idx" name="data" required>
+                <label for="data-idx" data-it>Data</label>
+                <label for="data-idx" data-en>Date</label>
+                <input type="date" id="data-idx" name="data">
               </div>
               <div class="form-group">
                 <label for="orario-idx" data-it>Orario</label>
@@ -427,9 +427,9 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="persone-idx" data-it>N° Persone *</label>
-              <label for="persone-idx" data-en>N° Guests *</label>
-              <select id="persone-idx" name="persone" required>
+              <label for="persone-idx" data-it>N° Persone</label>
+              <label for="persone-idx" data-en>N° Guests</label>
+              <select id="persone-idx" name="persone">
                 <option value="">—</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -442,9 +442,9 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="note-idx" data-it>Note</label>
-              <label for="note-idx" data-en>Notes</label>
-              <textarea id="note-idx" name="note" placeholder="Allergie, richieste speciali…" rows="3"></textarea>
+              <label for="note-idx" data-it>Il tuo messaggio *</label>
+              <label for="note-idx" data-en>Your message *</label>
+              <textarea id="note-idx" name="messaggio" required placeholder="Scrivi qui la tua richiesta. Se stai richiedendo la disponibilità di un tavolo, inserisci eventuali allergie o richieste speciali." rows="4"></textarea>
             </div>
             <button type="submit" class="btn btn-primary"
               data-label="Invia Prenotazione"
