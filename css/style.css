@@ -1202,6 +1202,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   /* Navbar */
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  .navbar-logo img { height: 31px; }
 
   /* Split */
   .split {
