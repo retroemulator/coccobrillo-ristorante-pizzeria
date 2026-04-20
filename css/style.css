@@ -313,7 +313,7 @@ p:last-child { margin-bottom: 0; }
   transition: color var(--transition);
 }
 .nav-mobile a:hover, .nav-mobile a.active { color: var(--white); }
-.nav-mobile .btn { align-self: flex-start; margin-top: 0.5rem; padding: 0.85rem 2rem; font-size: 0.8rem; }
+.nav-mobile .btn { align-self: flex-start; margin-top: 0.5rem; padding: 0.85rem 2rem; font-size: 0.85rem; letter-spacing: 0.12em; }
 .nav-mobile .lang-switcher { margin-top: 0.5rem; }
 
 /* ---------- FOOTER ---------- */
