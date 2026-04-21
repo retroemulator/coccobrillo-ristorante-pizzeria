@@ -917,7 +917,7 @@ body.lang-en .form-group label[data-en] { display: block; }
 }
 .menu-chapter-title {
   font-family: var(--font-heading);
-  font-size: 0.72rem;
+  font-size: 0.83rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--accent-1);
@@ -1295,7 +1295,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .menu-intro-text { font-size: 1.59rem; line-height: 1.5; }
   .menu-chapter { margin-bottom: 3rem; }
   .menu-chapter-header { gap: 0.8rem; margin-bottom: 1.5rem; }
-  .menu-chapter-title { font-size: 0.68rem; letter-spacing: 0.22em; }
+  .menu-chapter-title { font-size: 0.78rem; letter-spacing: 0.22em; }
 
   /* Team chi siamo */
   .team-img-wrap { overflow: hidden !important; border-radius: var(--radius); }
