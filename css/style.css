@@ -507,7 +507,7 @@ footer {
   color: var(--white);
 }
 .hero-logo-text-top { font-size: clamp(0.85rem, 2vw, 1.1rem); margin-bottom: 0.3rem; }
-.hero-logo-text-bottom { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 700; }
+.hero-logo-text-bottom { font-size: clamp(2.34rem, 6.5vw, 3.9rem); font-weight: 700; }
 .hero-title {
   font-family: var(--font-script);
   font-size: clamp(1.8rem, 5vw, 3rem);
@@ -516,8 +516,10 @@ footer {
   animation: fadeUp 0.8s ease 0.6s forwards;
 }
 .hero-subtitle {
-  font-family: var(--font-script);
-  font-size: clamp(1.38rem, 3.45vw, 2.07rem);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
   color: var(--accent-4);
   margin-bottom: 2rem;
   opacity: 0;
