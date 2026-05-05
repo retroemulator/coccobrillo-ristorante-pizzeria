@@ -131,7 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- 6. SMOOTH SCROLL ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
-      const target = document.querySelector(anchor.getAttribute('href'));
+      const href = anchor.getAttribute('href');
+      if (!href || href === '#' || href.length <= 1) return;
+      const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
         const offset = navbar ? navbar.offsetHeight + 16 : 80;

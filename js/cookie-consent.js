@@ -92,22 +92,19 @@
       showBanner();
     }
 
-    var btnAccept = document.getElementById('cookie-accept');
-    var btnRefuse = document.getElementById('cookie-refuse');
-
-    if (btnAccept) {
-      btnAccept.addEventListener('click', function () {
+    document.querySelectorAll('.cookie-btn-accept').forEach(function (btn) {
+      btn.addEventListener('click', function () {
         saveConsent('accepted');
         applyConsent('accepted');
         hideBanner();
       });
-    }
-    if (btnRefuse) {
-      btnRefuse.addEventListener('click', function () {
+    });
+    document.querySelectorAll('.cookie-btn-refuse').forEach(function (btn) {
+      btn.addEventListener('click', function () {
         saveConsent('refused');
         applyConsent('refused');
         hideBanner();
       });
-    }
+    });
   });
 })();
