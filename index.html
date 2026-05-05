@@ -490,7 +490,7 @@
   <div class="map-container reveal">
     <div class="map-iframe-wrap">
       <iframe
-        data-osm-src="https://www.openstreetmap.org/export/embed.html?bbox=7.5407%2C44.9999%2C7.5527%2C45.0119&layer=mapnik&marker=45.005889%2C7.546667"
+        data-osm-src="https://www.openstreetmap.org/export/embed.html?bbox=7.5407%2C44.9999%2C7.5527%2C45.0119&layer=mapnik"
         src="about:blank"
         width="100%" height="450"
         style="border:none;border-radius:0;"
@@ -498,6 +498,12 @@
         title="Mappa OpenStreetMap — Ristorante Coccobrillo, Via Marconi 7 Orbassano"
         aria-label="Mappa della posizione del ristorante">
       </iframe>
+      <a class="map-pin" href="https://www.openstreetmap.org/?mlat=45.005889&amp;mlon=7.546667#map=18/45.005889/7.546667" target="_blank" rel="noopener noreferrer" aria-label="Apri posizione su OpenStreetMap">
+        <svg viewBox="0 0 24 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 8.4 12 24 12 24s12-15.6 12-24C24 5.373 18.627 0 12 0z" fill="#852123"/>
+          <circle cx="12" cy="12" r="4.5" fill="#ffffff"/>
+        </svg>
+      </a>
     </div>
     <div class="map-placeholder" style="display:none;">
       <p data-it>Mappa non disponibile. Hai rifiutato i cookie di terze parti.<br>
@@ -505,7 +511,6 @@
       <p data-en>Map unavailable. You have declined third-party cookies.<br>
         <a href="#" onclick="window.resetCookieConsent();return false;">Change preferences</a></p>
     </div>
-    <p class="map-attribution">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a></p>
   </div>
 
 </main>

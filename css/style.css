@@ -817,7 +817,7 @@ body.lang-en .form-group label[data-en] { display: block; }
 
 /* ---------- MAP ---------- */
 .map-container { margin-top: 0; width: 100%; }
-.map-container iframe { border-radius: 0; display: block; width: 100%; }
+.map-container iframe { border-radius: 0; display: block; width: 100%; pointer-events: none; }
 .map-iframe-wrap { position: relative; }
 .map-pin {
   position: absolute;
