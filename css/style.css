@@ -826,15 +826,18 @@ body.lang-en .form-group label[data-en] { display: block; }
 .map-container { margin-top: 0; width: 100%; }
 .map-container iframe { border-radius: 0; display: block; width: 100%; pointer-events: none; }
 .map-iframe-wrap { position: relative; }
-.map-iframe-wrap::before {
+.map-iframe-wrap::before,
+.map-iframe-wrap::after {
   content: '';
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
   width: 46px; height: 82px;
   background: #f2efe9;
   z-index: 1;
   pointer-events: none;
 }
+.map-iframe-wrap::before { left: 0; }
+.map-iframe-wrap::after { right: 0; }
 .map-pin {
   position: absolute;
   top: 50%; left: 50%;
