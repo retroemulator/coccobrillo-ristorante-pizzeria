@@ -542,28 +542,31 @@ footer {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
   margin-top: 2.5rem;
   opacity: 0;
   animation: fadeUp 0.8s ease 1.2s forwards;
 }
-.scroll-indicator span {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.2em;
-  color: var(--accent-4);
-  text-transform: uppercase;
+.scroll-mouse {
+  width: 26px; height: 42px;
+  border: 2px solid var(--accent-4);
+  border-radius: 14px;
+  position: relative;
+  transition: border-color var(--transition);
 }
-.scroll-arrow {
-  width: 20px; height: 20px;
-  border-right: 2px solid var(--accent-4);
-  border-bottom: 2px solid var(--accent-4);
-  transform: rotate(45deg);
-  animation: bounce 1.5s infinite;
+.scroll-wheel {
+  position: absolute;
+  top: 7px; left: 50%;
+  width: 4px; height: 8px;
+  margin-left: -2px;
+  background: var(--accent-4);
+  border-radius: 2px;
+  animation: scroll-wheel 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 }
-@keyframes bounce {
-  0%, 100% { transform: rotate(45deg) translateY(0); }
-  50% { transform: rotate(45deg) translateY(6px); }
+@keyframes scroll-wheel {
+  0%   { opacity: 0; transform: translateY(0); }
+  20%  { opacity: 1; }
+  70%  { opacity: 1; transform: translateY(14px); }
+  100% { opacity: 0; transform: translateY(14px); }
 }
 
 /* ---------- ABOUT SPLIT (Homepage) ---------- */
