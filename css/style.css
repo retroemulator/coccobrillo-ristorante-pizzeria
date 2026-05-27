@@ -1398,8 +1398,8 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   line-height: 1.5;
   flex: 1;
 }
-.cookie-text a { color: var(--accent-1); transition: color var(--transition); }
-.cookie-text a:hover { color: var(--white); }
+.cookie-text a { color: var(--white); text-decoration: underline; text-underline-offset: 2px; transition: color var(--transition); }
+.cookie-text a:hover { color: var(--accent-4); }
 .cookie-btns {
   display: flex;
   gap: 0.75rem;
