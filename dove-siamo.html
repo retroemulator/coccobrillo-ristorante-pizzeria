@@ -266,7 +266,11 @@
         <p class="reveal" style="color:var(--accent-4);margin-top:1rem;font-size:0.95rem;line-height:1.5;" data-it>La prenotazione effettuata dal sito non costituisce conferma del tavolo: attendi la conferma dal Ristorante Coccobrillo.</p>
         <p class="reveal" style="color:var(--accent-4);margin-top:1rem;font-size:0.95rem;line-height:1.5;" data-en>Booking through the website does not constitute table confirmation: please wait for confirmation from Ristorante Coccobrillo.</p>
       </div>
-      <form class="contact-form reveal" action="https://formspree.io/f/mzdyeeoq" method="POST" novalidate>
+      <form class="contact-form reveal" action="https://formsubmit.co/ajax/r.coccobrillo@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nuova richiesta dal sito Coccobrillo">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-row">
           <div class="form-group">
             <label for="nome-ds" data-it>Nome *</label>

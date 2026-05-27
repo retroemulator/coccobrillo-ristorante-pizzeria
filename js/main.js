@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window._openConfirmModal = openModal;
   }
 
-  /* ---------- 5b. FORM SUBMIT (Formspree async) ---------- */
+  /* ---------- 5b. FORM SUBMIT (FormSubmit async) ---------- */
   document.querySelectorAll('.contact-form').forEach(form => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
