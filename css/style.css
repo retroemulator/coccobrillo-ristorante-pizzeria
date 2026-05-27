@@ -1197,19 +1197,20 @@ body.lang-en .form-group label[data-en] { display: block; }
 .popup-close {
   position: absolute;
   top: 0.5rem; right: 0.5rem;
-  background: rgba(0,0,0,0.55);
+  background: #fff;
   border: none;
   border-radius: 50%;
-  width: 28px; height: 28px;
+  width: 32px; height: 32px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 0.85rem;
+  font-size: 1rem;
   cursor: pointer;
-  color: #fff;
+  color: #000;
   line-height: 1;
-  transition: background var(--transition);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  transition: background var(--transition), transform var(--transition);
   z-index: 1;
 }
-.popup-close:hover { background: rgba(0,0,0,0.8); }
+.popup-close:hover { background: #f0f0f0; transform: scale(1.08); }
 
 /* ---------- REVEAL ANIMATIONS ---------- */
 .reveal {
