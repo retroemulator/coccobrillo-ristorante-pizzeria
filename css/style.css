@@ -433,6 +433,21 @@ footer {
   color: var(--white);
   padding: 0 1rem;
 }
+.page-header-eyebrow {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent-4);
+  margin-bottom: 1rem;
+}
+.page-header-scroll {
+  position: absolute;
+  bottom: 2rem; left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
 .page-header-content h1 {
   font-size: clamp(2.2rem, 6vw, 4rem);
   letter-spacing: 0.08em;
@@ -1267,7 +1282,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   }
   .navbar-logo { gap: 0; }
   .navbar-logo-text { display: none; }
-  .navbar-logo img { height: 40px; }
+  .navbar-logo img { height: 32px; }
   .navbar-instagram-mobile {
     display: flex;
     align-items: center;
@@ -1296,7 +1311,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .container { padding: 0 1.25rem; }
 
   /* Navbar */
-  .navbar-logo img { height: 31px; }
+  .navbar-logo img { height: 27px; }
 
   /* Split */
   .split {
@@ -1307,13 +1322,13 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .split .split-img[style*="aspect-ratio"] { max-height: none; max-width: 360px; margin: 0 auto; width: 100%; }
 
   /* Hero */
-  .hero { height: auto; min-height: 560px; padding: 6rem 0 4rem; }
+  .hero { height: auto; min-height: 620px; padding: 6rem 0 4rem; }
   .hero-logo { height: 64px; }
   .hero-btns { flex-direction: column; align-items: center; }
   .hero-btns .btn { width: 100%; max-width: 280px; text-align: center; }
 
-  /* Page header: stesse proporzioni dell'hero homepage su mobile */
-  .page-header { height: auto; min-height: 90vh; padding: 6rem 0 4rem; }
+  /* Page header: stessa altezza dell'hero homepage su mobile */
+  .page-header { height: auto; min-height: 620px; padding: 6rem 0 4rem; }
 
   /* Cards */
   .cards-grid { grid-template-columns: 1fr; }
