@@ -407,8 +407,8 @@ footer {
 /* ---------- PAGE HEADER ---------- */
 .page-header {
   position: relative;
-  height: 55vh;
-  min-height: 300px;
+  height: 100vh;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1313,7 +1313,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .hero-btns .btn { width: 100%; max-width: 280px; text-align: center; }
 
   /* Page header */
-  .page-header { height: 45vh; min-height: 260px; }
+  .page-header { height: 100vh; min-height: 500px; }
 
   /* Cards */
   .cards-grid { grid-template-columns: 1fr; }
