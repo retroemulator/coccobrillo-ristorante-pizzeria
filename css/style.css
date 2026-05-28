@@ -1312,8 +1312,8 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .hero-btns { flex-direction: column; align-items: center; }
   .hero-btns .btn { width: 100%; max-width: 280px; text-align: center; }
 
-  /* Page header */
-  .page-header { height: 100vh; min-height: 500px; }
+  /* Page header: come l'hero homepage su mobile (no 100vh) */
+  .page-header { height: auto; min-height: 560px; padding: 6rem 0 4rem; }
 
   /* Cards */
   .cards-grid { grid-template-columns: 1fr; }
