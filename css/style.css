@@ -1255,7 +1255,8 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
    RESPONSIVE — TABLET (max 1024px)
    ============================================================ */
 /* Navbar -> hamburger a sinistra + logo centrato (no testo) */
-@media (max-width: 1150px) {
+.navbar-instagram-mobile { display: none; }
+@media (max-width: 1217px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .navbar-inner { justify-content: center; position: relative; }
@@ -1267,6 +1268,16 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .navbar-logo { gap: 0; }
   .navbar-logo-text { display: none; }
   .navbar-logo img { height: 40px; }
+  .navbar-instagram-mobile {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-4);
+    transition: color var(--transition);
+  }
+  .navbar-instagram-mobile:hover { color: var(--white); }
 }
 
 @media (max-width: 1024px) {
