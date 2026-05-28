@@ -424,7 +424,7 @@ footer {
 .page-header-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(24,24,24,0.65), rgba(24,24,24,0.85));
+  background: linear-gradient(to bottom, rgba(24,24,24,0.72), rgba(24,24,24,0.92));
 }
 .page-header-content {
   position: relative;
@@ -494,9 +494,9 @@ footer {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(24,24,24,0.3) 0%,
-    rgba(24,24,24,0.5) 50%,
-    rgba(24,24,24,0.7) 100%
+    rgba(24,24,24,0.42) 0%,
+    rgba(24,24,24,0.6) 50%,
+    rgba(24,24,24,0.8) 100%
   );
 }
 .hero-content {
@@ -567,7 +567,7 @@ footer {
 }
 .scroll-line {
   display: block;
-  width: 3px; height: 64px;
+  width: 2px; height: 64px;
   border-radius: 2px;
   background: rgba(202, 195, 188, 0.25);
   position: relative;
