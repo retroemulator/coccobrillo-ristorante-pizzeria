@@ -1254,6 +1254,21 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
 /* ============================================================
    RESPONSIVE — TABLET (max 1024px)
    ============================================================ */
+/* Navbar -> hamburger a sinistra + logo centrato (no testo) */
+@media (max-width: 1150px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .navbar-inner { justify-content: center; position: relative; }
+  .hamburger {
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+  }
+  .navbar-logo { gap: 0; }
+  .navbar-logo-text { display: none; }
+  .navbar-logo img { height: 40px; }
+}
+
 @media (max-width: 1024px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1270,8 +1285,6 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .container { padding: 0 1.25rem; }
 
   /* Navbar */
-  .nav-links { display: none; }
-  .hamburger { display: flex; }
   .navbar-logo img { height: 31px; }
 
   /* Split */
