@@ -1004,6 +1004,20 @@ body.lang-en .form-group label[data-en] { display: block; }
   margin: 0 0 0.3rem;
   font-weight: 500;
 }
+.menu-entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+.menu-entry-price {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  color: var(--accent-1);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 .menu-entry-desc {
   font-size: 0.85rem;
   color: var(--accent-3);
@@ -1388,6 +1402,7 @@ body.lang-en a.btn[data-en]   { display: inline-block; }
   .menu-chapter { margin-bottom: 3rem; }
   .menu-chapter-header { gap: 0.8rem; margin-bottom: 1.5rem; }
   .menu-chapter-title { font-size: 0.78rem; letter-spacing: 0.22em; }
+  .menu-entry-head { gap: 0.8rem; }
 
   /* Team chi siamo */
   .team-img-wrap { overflow: hidden !important; border-radius: var(--radius); }
