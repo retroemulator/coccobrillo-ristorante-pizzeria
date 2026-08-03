@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/images/SaveClip*
 
-Sitemap: https://coccobrillo-ristorante-pizzeria.vercel.app/sitemap.xml
+Sitemap: https://www.coccobrillo.it/sitemap.xml

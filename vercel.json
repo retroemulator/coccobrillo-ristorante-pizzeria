@@ -1,4 +1,14 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "coccobrillo-ristorante-pizzeria.vercel.app" }
+      ],
+      "destination": "https://www.coccobrillo.it/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/chi-siamo",      "destination": "/chi-siamo.html" },
     { "source": "/menu",           "destination": "/menu.html" },
