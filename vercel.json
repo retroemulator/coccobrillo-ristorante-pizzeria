@@ -12,6 +12,7 @@
   "rewrites": [
     { "source": "/chi-siamo",      "destination": "/chi-siamo.html" },
     { "source": "/menu",           "destination": "/menu.html" },
+    { "source": "/menu-eventi",    "destination": "/menu-eventi.html" },
     { "source": "/frollatura",     "destination": "/frollatura.html" },
     { "source": "/dove-siamo",     "destination": "/dove-siamo.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" }
