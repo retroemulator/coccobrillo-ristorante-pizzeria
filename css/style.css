@@ -260,6 +260,64 @@ p:last-child { margin-bottom: 0; }
 .nav-links a:hover::after, .nav-links a.active::after {
   transform: scaleX(1);
 }
+/* Sottomenu (MENU > Menu Eventi) */
+.nav-has-sub { position: relative; }
+.nav-has-sub > a.nav-link { padding-right: 0.85rem; }
+.nav-has-sub > a.nav-link::after { right: 0.85rem; }
+.nav-has-sub > a.nav-link::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3.5px solid transparent;
+  border-right: 3.5px solid transparent;
+  border-top: 4px solid currentColor;
+  transition: transform var(--transition);
+}
+.nav-has-sub:hover > a.nav-link::before,
+.nav-has-sub:focus-within > a.nav-link::before,
+.nav-has-sub.open > a.nav-link::before { transform: rotate(180deg); }
+.nav-submenu {
+  position: absolute;
+  top: 100%;
+  left: -1.1rem;
+  margin-top: 0.9rem;
+  min-width: 190px;
+  padding: 0.5rem 0;
+  background: rgba(24,24,24,0.97);
+  border-top: 2px solid var(--accent-1);
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+}
+/* Ponte invisibile: il sottomenu non si chiude passando dalla voce alla tendina */
+.nav-submenu::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  top: -1.1rem;
+  height: 1.1rem;
+}
+.nav-has-sub:hover .nav-submenu,
+.nav-has-sub:focus-within .nav-submenu,
+.nav-has-sub.open .nav-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-submenu a[data-it],
+body.lang-en .nav-submenu a[data-en] {
+  display: block;
+  padding: 0.6rem 1.1rem;
+  white-space: nowrap;
+}
+body.lang-en .nav-submenu a[data-it] { display: none; }
+.nav-submenu a::after { display: none; }
+.nav-submenu a:hover, .nav-submenu a.active { background: rgba(255,255,255,0.06); }
 .nav-links .btn {
   padding: 0.5rem 1.2rem;
   font-size: 0.7rem;
@@ -340,6 +398,7 @@ p:last-child { margin-bottom: 0; }
   transition: color var(--transition);
 }
 .nav-mobile a:hover, .nav-mobile a.active { color: var(--white); }
+.nav-mobile a.nav-sublink { padding-left: 1.2rem; font-size: 0.78rem; }
 .nav-mobile .btn { align-self: flex-start; margin-top: 0.5rem; padding: 0.85rem 2rem; font-size: 0.85rem; letter-spacing: 0.12em; }
 .nav-mobile .lang-switcher { margin-top: 0.5rem; }
 

@@ -33,6 +33,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- 2b. SOTTOMENU SU TOUCH ---------- */
+  // Senza hover il primo tocco su MENU apre la tendina, il secondo apre la pagina
+  if (window.matchMedia('(hover: none)').matches) {
+    document.querySelectorAll('.nav-has-sub').forEach(item => {
+      item.querySelectorAll(':scope > a').forEach(link => {
+        link.addEventListener('click', (e) => {
+          if (!item.classList.contains('open')) {
+            e.preventDefault();
+            item.classList.add('open');
+          }
+        });
+      });
+      document.addEventListener('click', (e) => {
+        if (!item.contains(e.target)) item.classList.remove('open');
+      });
+    });
+  }
+
   /* ---------- 3. ACTIVE NAV LINK ---------- */
   const currentPath = window.location.pathname.replace(/\/$/, '') || '/index.html';
   document.querySelectorAll('.nav-link').forEach(link => {
@@ -90,7 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.contact-form').forEach(form => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const btn    = form.querySelector('[type="submit"]:not([hidden]):not([style*="display: none"])') || form.querySelector('[type="submit"]');
+      const lang   = document.body.classList.contains('lang-en') ? 'en' : 'it';
+      const btn    = form.querySelector(`[type="submit"][data-${lang}]`) || form.querySelector('[type="submit"]');
       const msgEl  = form.querySelector('.form-msg');
       if (!btn || !msgEl) return;
 
